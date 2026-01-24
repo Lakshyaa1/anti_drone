@@ -11,7 +11,7 @@ Unlike jamming, spoofing does not deny service outright; instead, it **misleads 
 
 ## GNSS Spoofing Using ESP32
 
-This module demonstrates a **prototype-scale GNSS spoofing mechanism** implemented using ESP32 microcontrollers. The system emulates GNSS-like coordinate data and transmits it wirelessly to a drone-side receiver, causing the drone to compute incorrect position information.
+This module demonstrates a **prototype-scale GNSS spoofing mechanism** implemented using ESP32. The system emulates GNSS-like coordinate data and transmits it wirelessly to a drone-side receiver, causing the drone to compute incorrect position information.
 
 The goal of this implementation is **conceptual demonstration and educational validation**, not real-world deployment.
 
