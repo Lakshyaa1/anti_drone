@@ -2,38 +2,21 @@
 
 ## Background
 
-The **Indo-Tibetan Border Police (ITBP)** is deployed along the Indo-China border, characterized by **high-altitude mountainous terrain**, **remote and sparsely populated regions**, and **extreme environmental conditions**.  
-Sub-zero temperatures, low atmospheric pressure, and high wind speeds significantly degrade the performance of both **human operators** and **electronic equipment** compared to plains and semi-plains.
+The **Indo-Tibetan Border Police (ITBP)** operates in **high-altitude, remote terrain** along the Indo-China border, where extreme conditions degrade both **human** and **equipment** performance.  
+These regions are vulnerable to **enemy drone intrusions**, requiring a **counter-drone solution** for **early detection** and **soft-kill neutralization** (jamming & spoofing) within a safe operational radius.
 
-These regions are highly vulnerable to **enemy drone intrusions**, necessitating an effective **counter-drone solution** capable of **early detection** and **soft-kill neutralization** (jamming and spoofing).  
-The objective is to establish a **protective electronic umbrella** within a safe operational radius to detect, track, and neutralize hostile drones.
 
----
+## Problem Statement
 
-## Problem Statement (Competition Brief)
+A **portable anti-drone system** with **detection, jamming, and spoofing** modules to counter **single and swarm drone threats** from multiple directions.
 
-An anti-drone system is required with **portable detection, jamming, and spoofing modules**, capable of countering **single and swarm drone threats** approaching simultaneously from multiple directions.
+| Capability | Range |
+|---|---|
+| Detection (Micro/Small) | **≥ 5 km** |
+| Detection (Medium) | **≥ 10 km** |
+| Jamming (Omni / Directional) | **≥ 3 km / ≥ 4 km** |
+| Spoofing (Omni / Directional) | **≥ 20 km / ≥ 40 km** |
 
-### Required Capabilities
-
-### A) System Components
-- RF Detector (Wideband Scanner) for drone detection  
-- RF and Satellite Navigation Jamming System  
-- Optional Drone Spoofing / Takeover Capability  
-
-### B) Detection Range
-- Micro & Small Drones: **5 km or better**  
-- Medium Drones: **10 km or better**
-
-### C) Jamming Range
-- Omni-directional: **≥ 3 km**  
-- Directional: **≥ 4 km**
-
-### D) Spoofing Range (ISM Bands: 400 MHz – 8 GHz)
-- Omni-directional: **≥ 20 km**  
-- Directional: **≥ 40 km**
-
----
 
 ## Competition Context
 
@@ -52,71 +35,60 @@ This system is a **Proof of Concept (PoC)** implementation of the above problem 
 - Does **not claim to achieve operational field ranges** mentioned in the problem statement  
 - Designed for **academic, research, and controlled testing environments**
 
----
 
-## System Overview
+#### The repository is divided into 4 main components :
 
-The Anti-Drone System is designed as a **modular architecture**, allowing independent development and evaluation of each subsystem.
 
----
-
-## System Modules
-
-### 📡 Drone Detection (HackRF)
+## [Drone Detection](https://github.com/badboy1606/anti_drone/tree/main/drone_detection)
 
 Drone detection is performed using **Software Defined Radio (SDR)** techniques with **HackRF**, focusing on identifying RF activity associated with drone communication and control links.
 
-> This module serves as a detection PoC.  
-> Detailed implementation and enhancements are maintained by the contributors working specifically on detection.
+<p align="center">
+  <img src="assets/spectrum.png" alt="drone rf spectrum"width = "500"/>
+</p>
 
-📂 **Module directory:** `detection/`
 
 ---
 
-### 📡 Jamming
+## [Drone tracking](https://github.com/badboy1606/anti_drone/tree/main/drone_tracking)
+
+This is done using YOLO for the detection of drone and making a 2 DOF appratus which will be used for tracking purpose
+
+<p align="center">
+  <img src="assets/detect2.png" alt="drone detection"width = "500"/>
+</p>
+
+
+---
+
+## [Jamming](https://github.com/badboy1606/anti_drone/tree/main/Jamming)
 
 The jamming module explores **soft-kill techniques** to disrupt drone control and navigation links by transmitting interference signals on targeted frequency bands.
 
-➡️ **Read detailed documentation:**  
-🔗 [Jamming Module README](jamming/)
-
 ---
 
-### 🛰️ Spoofing
+## [Spoofing](https://github.com/badboy1606/anti_drone/tree/main/Spoofing)
 
 The spoofing module demonstrates a **prototype GNSS spoofing mechanism** using ESP32 microcontrollers, highlighting vulnerabilities in unauthenticated navigation systems by transmitting false but valid-looking coordinate data.
 
-➡️ **Read detailed documentation:**  
-🔗 [Spoofing Module README](spoofing/)
-
 ---
+## Usage
 
-## Our Approach
+To clone and try out stuff the project: 
 
-1. **Threat Understanding**  
-   Studied drone communication, navigation methods, and vulnerabilities relevant to border surveillance scenarios.
+```
+git clone https://github.com/badboy1606/anti_drone.git
+```
+Software and components Required
 
-2. **Modular Design**  
-   Split the system into detection, jamming, and spoofing modules for independent development and testing.
+- GNU Radio
+- HackRF One
 
-3. **Soft-Kill Focus**  
-   Prioritized non-kinetic neutralization methods (jamming & spoofing) suitable for sensitive and remote environments.
 
-4. **Prototype Validation**  
-   Implemented PoC-level demonstrations using SDRs and microcontrollers to validate concepts.
-
-5. **Scalability Consideration**  
-   Designed architecture such that higher-power RF front-ends and directional systems can be integrated in future iterations.
-
----
-
-## Project Structure
-
-```text
-anti-drone-system/
-├── README.md
-├── detection/
-├── jamming/
-│   └── README.md
-├── spoofing/
-│   └── README.md
+### Connect with us 
+- [Arhan Chavare](https://www.linkedin.com/in/arhan-chavare-5a23a8334/)
+- [Sahil Apage](https://www.linkedin.com/in/sahilapage/)
+- [Lakshya Lalwani]( https://www.linkedin.com/in/lakshya-lalwani-32a35b259/)
+- [Harshit Bhalani](https://www.linkedin.com/in/harshit-vinod-bhalani-597640323/)
+- [Janhvi Mokal](https://www.linkedin.com/in/janhavi-mokal-9b1706328/)
+- [Rayon Biswas](https://www.linkedin.com/in/rayon-biswas-309b78346/)
