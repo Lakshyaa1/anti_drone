@@ -44,7 +44,7 @@ This system is a **Proof of Concept (PoC)** implementation of the above problem 
 Drone detection is performed using **Software Defined Radio (SDR)** techniques with **HackRF**, focusing on identifying RF activity associated with drone communication and control links.
 
 <p align="center">
-  <img src="assets/spectrum.png" alt="drone rf spectrum"width = "500"/>
+  <img src="assets/spectrum.jpeg" alt="drone rf spectrum"width = "500"/>
 </p>
 
 
@@ -55,7 +55,7 @@ Drone detection is performed using **Software Defined Radio (SDR)** techniques w
 This is done using YOLO for the detection of drone and making a 2 DOF appratus which will be used for tracking purpose
 
 <p align="center">
-  <img src="assets/detect2.png" alt="drone detection"width = "500"/>
+  <img src="assets/detect2.jpeg" alt="drone detection"width = "500"/>
 </p>
 
 
