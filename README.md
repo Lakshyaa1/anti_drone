@@ -38,6 +38,7 @@ This system is a **Proof of Concept (PoC)** implementation of the above problem 
 
 #### The repository is divided into 4 main components :
 
+---
 
 ## [Drone Detection](https://github.com/badboy1606/anti_drone/tree/main/drone_detection)
 
@@ -48,8 +49,6 @@ Drone detection is performed using **Software Defined Radio (SDR)** techniques w
 </p>
 
 
----
-
 ## [Drone tracking](https://github.com/badboy1606/anti_drone/tree/main/drone_tracking)
 
 This is done using YOLO for the detection of drone and making a 2 DOF appratus which will be used for tracking purpose
@@ -59,19 +58,14 @@ This is done using YOLO for the detection of drone and making a 2 DOF appratus w
 </p>
 
 
----
-
 ## [Jamming](https://github.com/badboy1606/anti_drone/tree/main/Jamming)
 
 The jamming module explores **soft-kill techniques** to disrupt drone control and navigation links by transmitting interference signals on targeted frequency bands.
-
----
 
 ## [Spoofing](https://github.com/badboy1606/anti_drone/tree/main/Spoofing)
 
 The spoofing module demonstrates a **prototype GNSS spoofing mechanism** using ESP32 microcontrollers, highlighting vulnerabilities in unauthenticated navigation systems by transmitting false but valid-looking coordinate data.
 
----
 ## Usage
 
 To clone and try out stuff the project: 
@@ -84,6 +78,7 @@ Software and components Required
 - GNU Radio
 - HackRF One
 
+--- 
 
 ### Connect with us 
 - [Arhan Chavare](https://www.linkedin.com/in/arhan-chavare-5a23a8334/)
