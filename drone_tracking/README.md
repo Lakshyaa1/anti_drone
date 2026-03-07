@@ -24,7 +24,7 @@ drone_tracking/
 
 
 <p align="center">
-  <img src="/home/arhan16/anti_drone/assets/track.jpeg" alt="drone detection"width = "500"/>
+  <img src="assets/track.jpeg" alt="drone detection"width = "500"/>
 </p>
 
 ## Data Flow
