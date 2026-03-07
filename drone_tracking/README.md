@@ -22,6 +22,11 @@ drone_tracking/
 - Computes turret pan and tilt angles
 - Sends smoothed angle commands to ESP32 via serial
 
+
+<p align="center">
+  <img src="/home/arhan16/anti_drone/assets/track.jpeg" alt="drone detection"width = "500"/>
+</p>
+
 ## Data Flow
 Camera > Detection > Position Estimation > Angle Computation > ESP32
 
@@ -35,3 +40,5 @@ Camera > Detection > Position Estimation > Angle Computation > ESP32
 - Flash main.c in the esp32
 - Connect the servo motors correctly 
 - Run drone_aim.py and see the turret correctly following the drone 
+
+
