@@ -61,6 +61,10 @@ This is done using YOLO for the detection of drone and making a 2 DOF appratus w
 ## [Jamming](https://github.com/badboy1606/anti_drone/tree/main/Jamming)
 
 The jamming module explores **soft-kill techniques** to disrupt drone control and navigation links by transmitting interference signals on targeted frequency bands.
+<p align="center">
+  <img src="assets/image.png" alt="drone detection"width = "500"/>
+</p>
+
 
 ## [Spoofing](https://github.com/badboy1606/anti_drone/tree/main/Spoofing)
 
